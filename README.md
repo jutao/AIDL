@@ -18,8 +18,11 @@ AIDL 的用法基本和写普通 Java 接口相同，需要注意的是包名一
 
 写完之后需要注意，如果你写的 AIDL 接口正确，那么 Eclipse 是会自动编译的，而 Android Studio 需要手动编译，编译按钮如下图所示：
 ![](http://i.imgur.com/NnSnU2a.png)
+
 编译通过后，Android Studio 所生成的文件在图下所示目录，Eclipse 在 gen 目录下。
+
 ![](http://i.imgur.com/VTAkxIR.png)
+
 
 ## 写 Service ##
       //当客户端绑定到该服务的时候
@@ -62,8 +65,11 @@ conn的定义:
     }
       };
 运行后的效果如下
+
 ![](http://i.imgur.com/zoqkeKX.png)
+
 点击按钮后
+
 ![](http://i.imgur.com/JAs8dhp.png)
 
 # AIDL 自定义类型 #
@@ -112,7 +118,9 @@ age 是我定义的一个全局变量，初值为 20，用来区别每个 Perosn
 可以看到，我每次输出的都是 persons 这一List，这是通过服务端返回的，说明我传输过去的值已经被服务端接收并存储。
 
 # Demo 地址 #
+
 [AIDL服务端](https://github.com/jutao/aidl)
+
 [AIDL客户端](https://github.com/jutao/aidlclient)
 
 注意：运行客户端的时候一定要保证服务端已经跑起来了，这里没有做处理，如果没有按要去运行会报错。
